@@ -31,15 +31,11 @@
   --fs-400: 1.3rem;
   --fs-300: 1rem;
   --fs-200: 0.9rem;
-  --fs-100: 0.8rem;
+  --fs-100: 0.85rem;
 }
 
 /*=======General-Reset====*/
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+
 * {
   margin: 0;
   padding: 0;
@@ -47,6 +43,7 @@
   border: 0;
   list-style: none;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 body {
@@ -91,6 +88,11 @@ img {
 .fs-200 {
   font-size: var(--fs-200);
 }
+
+.fs-100 {
+  font-size: var(--fs-100);
+}
+
 /*=======Reusable Component====*/
 .container {
   width: var(--lg-container-width);
@@ -102,6 +104,9 @@ section h2 {
   margin-bottom: 4rem;
 }
 
+section {
+  padding: 6rem 0;
+}
 .btn {
   display: inline-block;
   font-weight: 500;
@@ -121,6 +126,12 @@ section h2 {
 .btn-primary {
   color: var(--color-white);
   background-color: var(--color-danger);
+}
+
+.grid--3--cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
 }
 
 /*=======Nav-Component====*/
@@ -155,6 +166,11 @@ nav {
   border-bottom: 2px solid var(--color-white);
 }
 
+.window-scroll {
+  background-color: var(--color-primary);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
 button {
   display: none;
 }
@@ -178,4 +194,61 @@ button {
 
 .hero p {
   margin: 1rem 0 2rem;
+}
+
+/*=======Category-Session====*/
+.category {
+  background-color: var(--color-bg2);
+  height: 30rem;
+}
+
+.category-container {
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+.category-left {
+  margin-right: 4rem;
+}
+.category h1 {
+  margin-bottom: 3rem;
+}
+
+.category-left p {
+  margin: 1rem 0 3rem;
+}
+.tags {
+  background-color: var(--color-bg3);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  transition: var(--transition);
+}
+
+.tags:hover {
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.tags:nth-child(2) .tags-icon {
+  background-color: var(--color-danger);
+}
+
+.tags:nth-child(3) .tags-icon {
+  background-color: var(--color-secondary);
+}
+
+.tags:nth-child(4) .tags-icon {
+  background-color: var(--color-signal);
+}
+
+.tags:nth-child(5) .tags-icon {
+  background-color: var(--color-variant-danger);
+}
+
+.tags-icon {
+  background-color: var(--color-primary);
+  padding: 0.7rem;
+  border-radius: 0.8rem;
+}
+
+.tags h5 {
+  margin: 2rem 0 1rem;
 }
