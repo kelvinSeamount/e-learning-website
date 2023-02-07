@@ -131,7 +131,13 @@ section {
 .grid--3--cols {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.2rem;
+  gap: 1.8rem;
+}
+
+.grid--2--cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 
 /*=======Nav-Component====*/
@@ -251,4 +257,58 @@ button {
 
 .tags h5 {
   margin: 2rem 0 1rem;
+}
+
+/*=======Course-Session====*/
+.course {
+  margin-top: 10rem;
+}
+
+.course-outline {
+  text-align: center;
+  background-color: var(--color-bg3);
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.course-outline:hover {
+  border-color: var(--color-primary);
+  background-color: transparent;
+}
+.info {
+  padding: 2rem;
+}
+
+.info p {
+  margin-block: 2rem;
+}
+
+/*=======FAQS-Session====*/
+.faqs {
+  background-color: var(--color-bg2);
+  box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+
+.faq {
+  background-color: var(--color-primary);
+  padding: 1.8rem;
+  display: flex;
+  gap: 0.8rem;
+  height: fit-content;
+  cursor: pointer;
+  align-items: center;
+}
+
+.faq-icon {
+  align-self: flex-start;
+  font-size: var(--fs-400);
+}
+
+.faq p {
+  margin-top: 0.8rem;
+  display: none;
+}
+
+.open p {
+  display: block;
 }
