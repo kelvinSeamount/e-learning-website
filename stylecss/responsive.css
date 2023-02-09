@@ -1,0 +1,23 @@
+/*=============MEDIA QUERIES=============*/
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--md-container-width);
+  }
+
+  h1 {
+    font-size: var(--fs-h1);
+  }
+
+  h2 {
+    font-size: var(--fs-h2);
+  }
+
+  h3 {
+    font-size: var(--fs-h3);
+  }
+
+  h4 {
+    font-size: var(--fs-h4);
+  }
+}

@@ -32,6 +32,13 @@
   --fs-300: 1rem;
   --fs-200: 0.9rem;
   --fs-100: 0.85rem;
+
+  /*=======Fonts-Size-Variables@ Screen 1024px====*/
+
+  --fs-h1: 2.2rem;
+  --fs-h2: 1.7rem;
+  --fs-h3: 1.4rem;
+  --fs-h4: 1.2rem;
 }
 
 /*=======General-Reset====*/
@@ -59,37 +66,33 @@ img {
   width: 100%;
 }
 
-/*=======Color-Utilities====*/
-.color-white {
-  color: var(--color-white);
-}
-
 /*=======Typography-Utilities====*/
-.fs-700 {
+h1 {
   font-size: var(--fs-700);
 }
 
-.fs-600 {
+h2 {
   font-size: var(--fs-600);
 }
 
-.fs-500 {
+h3 {
   font-size: var(--fs-500);
 }
 
-.fs-400 {
+h4 {
   font-size: var(--fs-400);
 }
 
-.fs-300 {
+h5 {
   font-size: var(--fs-300);
 }
 
-.fs-200 {
+a {
   font-size: var(--fs-200);
+  color: var(--color-white);
 }
 
-.fs-100 {
+p {
   font-size: var(--fs-100);
 }
 
@@ -140,6 +143,11 @@ section {
   gap: 1rem;
 }
 
+.grid--4--cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+}
 /*=======Nav-Component====*/
 nav {
   width: 100vw;
@@ -205,7 +213,7 @@ button {
 /*=======Category-Session====*/
 .category {
   background-color: var(--color-bg2);
-  height: 30rem;
+  height: 32rem;
 }
 
 .category-container {
@@ -311,4 +319,87 @@ button {
 
 .open p {
   display: block;
+}
+
+/*=======Testimoinal-Session====*/
+.container-testimonials {
+  overflow-x: hidden;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.testimonial {
+  padding-top: 2rem;
+}
+
+.image-testimonial {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+}
+
+.info-testimonial {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.testimonial-text {
+  background-color: var(--color-bg3);
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.testimonial-text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 44%;
+  top: -1.5rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--color-bg3);
+  transform: rotate(45deg);
+}
+
+/*=======Footer-Session====*/
+footer {
+  background-color: var(--color-bg2);
+  padding-top: 5rem;
+}
+
+.footer h4 {
+  margin-bottom: 3rem;
+}
+
+.footer p {
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+footer ul li {
+  margin-bottom: 1rem;
+}
+
+footer ul li a {
+  cursor: pointer;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+  font-size: var(--fs-700);
+}
+.copyright {
+  text-align: center;
+  padding-block: 3rem;
+  border-top: 1px solid var(--color-white);
+  margin-top: 4rem;
 }
