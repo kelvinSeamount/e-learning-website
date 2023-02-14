@@ -143,6 +143,12 @@ section {
   gap: 1rem;
 }
 
+.grid--3--col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+}
+
 .grid--4--cols {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -187,6 +193,7 @@ nav {
 
 button {
   display: none;
+  border: none;
 }
 
 /*=======Hero-Session====*/
@@ -358,6 +365,18 @@ button {
   position: absolute;
   left: 44%;
   top: -1.5rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--color-bg3);
+  transform: rotate(45deg);
+}
+
+.testimonial-text::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 44%;
+  bottom: -1.5rem;
   width: 3rem;
   height: 3rem;
   background-color: var(--color-bg3);
