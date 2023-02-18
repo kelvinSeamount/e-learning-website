@@ -1,0 +1,13 @@
+.about-success {
+  margin-top: 3rem;
+}
+
+.achieve-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 5rem;
+}
+
+.about-right > p {
+  margin-block: 1.8rem;
+}
