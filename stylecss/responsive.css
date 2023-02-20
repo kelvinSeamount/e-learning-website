@@ -195,3 +195,52 @@
     justify-content: center;
   }
 }
+
+/*=============MEDIA QUERIES(ABOUT SESSION TABLETS)=============*/
+
+@media screen and (max-width: 1024px) {
+  .about-success {
+    margin-top: 2rem;
+  }
+
+  .achieve-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-left {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .grid--4--about {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.4rem;
+  }
+
+  .member {
+    padding: 1rem;
+  }
+}
+
+/*=============MEDIA QUERIES(ABOUT SESSION PHONES)=============*/
+
+@media screen and (max-width: 600px) {
+  .sucess-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .grid--4--about {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+  }
+
+  .member {
+    padding: 0;
+  }
+
+  .member p {
+    margin-bottom: 1rem;
+  }
+} ;

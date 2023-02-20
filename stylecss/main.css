@@ -155,6 +155,12 @@ section {
   grid-template-columns: repeat(4, 1fr);
   gap: 4rem;
 }
+
+.grid--4--about {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
 /*=======Nav-Component====*/
 nav {
   width: 100vw;
@@ -417,6 +423,7 @@ footer ul li a:hover {
   gap: 1rem;
   font-size: var(--fs-700);
 }
+
 .copyright {
   text-align: center;
   padding-block: 3rem;
