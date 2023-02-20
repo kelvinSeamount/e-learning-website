@@ -119,6 +119,7 @@ section {
   background-color: var(--color-white);
   transition: var(--transition);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .btn:hover {
