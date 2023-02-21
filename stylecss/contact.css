@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 40% 60%;
   gap: 4rem;
-  border-radius: 0.6rem;
+  border-radius: 1rem;
   background-color: var(--color-bg2);
   height: 30rem;
   margin: 7rem auto;
@@ -12,9 +12,9 @@
 .aside-box {
   background-color: var(--color-primary);
   padding: 3rem;
-  border-radius: 0.6rem;
+  border-radius: 1rem;
   position: relative;
-  bottom: 8rem;
+  bottom: 10rem;
 }
 
 .img-aside {
@@ -29,14 +29,14 @@
 
 .aside-box p {
   font-size: var(--fs-200);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .contact-info li {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
-  margin-bottom: 0.8rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .social-contact {
@@ -61,7 +61,7 @@
   width: 50%;
 }
 
-.form-contact input,
+input,
 textarea {
   width: 100%;
   padding: 1rem;
@@ -72,4 +72,58 @@ textarea {
 .form-contact .btn {
   width: max-content;
   margin-top: 1rem;
+}
+
+/*=============MEDIA QUERIES(CONTACT SESSION TABLETS)=============*/
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--md-container-width);
+  }
+
+  .contact {
+    padding-bottom: 0;
+  }
+
+  .container-contact {
+    gap: 1.5rem;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    height: auto;
+  }
+
+  .aside-box {
+    padding: 1.5rem;
+    width: auto;
+    bottom: 0;
+  }
+
+  .form-contact {
+    align-self: center;
+    margin-right: 1.5rem;
+  }
+}
+
+/*=============MEDIA QUERIES(CONTACT SESSION PHONES)=============*/
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--sm-container-width);
+  }
+
+  .container-contact {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0;
+  }
+
+  .form-name {
+    flex-direction: column;
+  }
+
+  .form-contact input[type="text"] {
+    width: 100%;
+  }
+
+  .form-contact {
+    margin: 0 1.5rem 3rem;
+  }
 }

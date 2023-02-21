@@ -199,6 +199,9 @@
 /*=============MEDIA QUERIES(ABOUT SESSION TABLETS)=============*/
 
 @media screen and (max-width: 1024px) {
+  .container {
+    width: var(--md-container-width);
+  }
   .about-success {
     margin-top: 2rem;
   }
@@ -226,6 +229,9 @@
 /*=============MEDIA QUERIES(ABOUT SESSION PHONES)=============*/
 
 @media screen and (max-width: 600px) {
+  .container {
+    width: var(--sm-container-width);
+  }
   .sucess-cards {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -242,30 +248,5 @@
 
   .member p {
     margin-bottom: 1rem;
-  }
-}
-
-/*=============MEDIA QUERIES(CONTACT SESSION TABLETS)=============*/
-@media screen and (max-width: 1024px) {
-  .contact {
-    padding-bottom: 0;
-  }
-
-  .container-contact {
-    gap: 1.3rem;
-    height: auto;
-    padding: 1.4rem;
-    margin-top: 2.8rem;
-  }
-
-  .aside-box {
-    padding: 1.4rem;
-    width: auto;
-    bottom: 0;
-  }
-
-  .form-contact {
-    align-self: center;
-    margin-right: 1.3rem;
   }
 }
