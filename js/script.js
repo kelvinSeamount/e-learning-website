@@ -14,12 +14,18 @@ window.onload = function () {
 };
 
 /*----TO DISPLAY FAQ MESSAGE---*/
-const faqButton = document.querySelectorAll(".faq");
-for (let i = 0; i < faqButton.length; i++) {
-  faqButton[i].addEventListener("click", function () {
-    faqButton[i].classList.toggle("open");
+const question = document.querySelectorAll(".question");
+question.forEach(function (question) {
+  console.log(question);
+  const btn = question.querySelector(".question-icon");
+  console.log(btn);
+  btn.addEventListener("click", function () {
+    question.classList.toggle("show-text");
   });
-}
+});
+
+/*----TO DISPLAY MENU---*/
+
 const menuNav = document.querySelector(".nav-menu");
 const menuButton = document.querySelector("#open-menu-btn");
 const menucloseButton = document.querySelector("#close-menu-btn");

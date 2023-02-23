@@ -312,28 +312,47 @@ button {
   box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
 }
 
-.faq {
+.question {
   background-color: var(--color-primary);
   padding: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.question-text {
   display: flex;
-  gap: 0.8rem;
-  height: fit-content;
-  cursor: pointer;
   align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
 }
 
-.faq-icon {
-  align-self: flex-start;
+.question-icon {
   font-size: var(--fs-400);
+
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
 }
 
-.faq p {
-  margin-top: 0.8rem;
+.text-question {
+  border-top: 1px solid black;
+  padding-top: 1rem;
   display: none;
 }
 
-.open p {
+.minus-icon {
+  display: none;
+}
+
+.show-text .text-question {
   display: block;
+}
+
+.show-text .minus-icon {
+  display: inline;
+}
+
+.show-text .plus-icon {
+  display: none;
 }
 
 /*=======Testimoinal-Session====*/
