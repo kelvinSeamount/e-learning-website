@@ -1,24 +1,25 @@
-/*window.addEventListener("scroll", function () {
-  document
-    .querySelector("nav")
-    .classList.toggle("window-scroll", window.scrollY > 0);
+//Selecting the DOM
+const scrollNav = document.querySelector("nav");
+
+document.addEventListener("scroll", function () {
+  scrollNav.classList.toggle("window-scroll", window.scrollY > 0);
 });
-*/
-window.onload = function () {
+
+/*window.onload = function () {
   window.addEventListener("scroll", () => {
     const nav = document.querySelector("nav");
     if (nav) {
       nav.classList.toggle("window-scroll", window.scrollY > 0);
     }
   });
-};
+};*/
 
 /*----TO DISPLAY FAQ MESSAGE---*/
 const question = document.querySelectorAll(".question");
 question.forEach(function (question) {
-  console.log(question);
+  /*console.log(question);*/
   const btn = question.querySelector(".question-icon");
-  console.log(btn);
+  /*console.log(btn);*/
   btn.addEventListener("click", function () {
     question.classList.toggle("show-text");
   });

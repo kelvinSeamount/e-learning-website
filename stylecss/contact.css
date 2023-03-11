@@ -45,6 +45,10 @@
   gap: 0.7rem;
 }
 
+.social-contact li a {
+  font-size: var(--fs-500);
+}
+
 .form-contact {
   display: flex;
   flex-direction: column;
